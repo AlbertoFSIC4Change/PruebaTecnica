@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:prueba_tecnica/auth.dart';
-import 'loginpage.dart';
+import 'package:prueba_tecnica/services/auth.dart';
+import '../app/auth/loginpage.dart';
 import 'package:provider/provider.dart';
 
 class LoginButton extends StatefulWidget {

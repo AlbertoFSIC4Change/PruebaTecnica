@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:prueba_tecnica/auth.dart';
+import 'package:prueba_tecnica/services/auth.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void anonymousLogin() async{
-    String user = await _auth.signInAnon();
+    String? user = await _auth.signInAnon();
     (user != null) ? print('console: Logged in as $user') : print('console: Error logging in');
     Navigator.pop(context);
   }
